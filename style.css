@@ -310,15 +310,31 @@ header > * {
   gap: 2rem;
 }
 
+.project h3 {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #153330;
+}
+
+.project p {
+  color: #0c887a;
+  font-weight: 500;
+}
+
 .image-div {
   flex: 1;
   border-radius: 15px;
-  overflow: hidden;
 }
 
+.image-div:hover {
+  /* box-shadow: 0 0 10px white; */
+  transition: all 0.3s;
+  transform: scale(1.02);
+}
 .proj-thumbnail {
   height: 100%;
   width: 100%;
+  border-radius: 15px;
   object-fit: cover;
   overflow: hidden;
 }
@@ -431,6 +447,15 @@ header > * {
 
   .skiller {
     margin: 0;
+  }
+
+  .projects {
+    padding: 2rem;
+  }
+
+  .projects h2 {
+    margin: 0;
+    margin-bottom: 1rem;
   }
 
   .projects-list {
