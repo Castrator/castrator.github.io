@@ -451,6 +451,7 @@ header > * {
 
   .projects {
     padding: 2rem;
+    border-bottom: 10px solid #0aaa98;
   }
 
   .projects h2 {
