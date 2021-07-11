@@ -1,16 +1,16 @@
 .thumbnail-slides {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .column {
   float: left;
-  height: 150px;
+  height: 8vw;
   width: 25%;
   overflow: hidden;
 }
 
 .column img {
-  object-fit: contain;
+  height: 100%;
   width: 100%;
 }
 
@@ -34,7 +34,7 @@
   margin: auto;
   padding: 0;
   width: 90%;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 /* The Close Button */
