@@ -3,7 +3,7 @@ const promptMe = document.querySelector('.prompt-me');
 const theHeader = document.querySelector('.the-head');
 
 function imgClick() {
-  console.log(promptMe.style.width);
+  // console.log(promptMe.style.width);
   if (promptMe.style.width === '0px') {
     promptMe.style.width = '100%';
     promptMe.style.opacity = '1';
