@@ -1,33 +1,35 @@
+let reference = '';
 // Open the Modal
-function openModal() {
-  document.querySelector('.projects-modal').style.display = 'block';
+function openModal(e) {
+  reference = document.querySelector(e);
+  reference.style.display = 'block';
 }
 
 // Close the Modal
-function closeModal() {
-  document.querySelector('.projects-modal').style.display = 'none';
+function closeModal(e) {
+  reference.style.display = 'none';
 }
 
 var slideIndex = 1;
-showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+function plusSlides(n, f, l) {
+  showSlides((slideIndex += n), f, l);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
+function currentSlide(n, f, l) {
+  showSlides((slideIndex = n), f, l);
 }
 
-function showSlides(n) {
+function showSlides(n, firstIndex, lastIndex) {
   var i;
   var slides = document.getElementsByClassName('modal-slides');
   var dots = document.getElementsByClassName('demo');
-  // var captionText = document.getElementById('caption');
-  if (n > slides.length) {
-    slideIndex = 1;
+  // var captionText = document.getElementById("caption");
+
+  if (n > lastIndex) {
+    slideIndex = firstIndex;
   }
   if (n < 1) {
     slideIndex = slides.length;
@@ -40,5 +42,6 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = 'block';
   dots[slideIndex - 1].className += ' active';
-  // captionText.innerHTML = dots[slideIndex - 1].alt;
+  console.log(dots[slideIndex - 1]);
+  // captionText.innerHTML = dots[slideIndex-1].alt;
 }

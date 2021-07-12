@@ -154,7 +154,7 @@
                   class="proj-thumbnail hover-shadow"
                   src="img/isko&iska/i&i-thumbnail.png"
                   alt="project image"
-                  onclick="openModal();currentSlide(1)"
+                  onclick="openModal('.projects-modal-1');currentSlide(1)"
                 />
               </div>
 
@@ -168,7 +168,7 @@
                   class="proj-thumbnail hover-shadow"
                   src="img/youshoes/youshoes-thumbnail2.png"
                   alt=""
-                  onclick="openModal();currentSlide(1)"
+                  onclick="openModal('.projects-modal-2');currentSlide(5)"
                 />
               </div>
 
@@ -182,7 +182,7 @@
                   class="proj-thumbnail hover-shadow"
                   src="img/balaykalan-on/bk-thumbnail2.png"
                   alt=""
-                  onclick="openModal();currentSlide(1)"
+                  onclick="openModal('.projects-modal-3');currentSlide(9)"
                 />
               </div>
 
@@ -191,39 +191,44 @@
             </div>
           </div>
 
-          <div class="projects-modal modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="projects-modal-1 modal">
+            <span class="close cursor" onclick="closeModal('.projects-modal-1')"
+              >&times;</span
+            >
             <div class="modal-content">
               <div class="modal-slides">
                 <div class="numbertext">1 / 4</div>
-                <img src="img/isko&iska/img1.png" style="width: 100%" />
+                <img
+                  src="img/isko&iska/i&i-thumbnail.png"
+                  style="width: 100%"
+                />
               </div>
 
               <div class="modal-slides">
                 <div class="numbertext">2 / 4</div>
-                <img src="img/isko&iska/img2.png" style="width: 100%" />
+                <img src="img/isko&iska/img1.png" style="width: 100%" />
               </div>
 
               <div class="modal-slides">
                 <div class="numbertext">3 / 4</div>
-                <img src="img/isko&iska/img3.png" style="width: 100%" />
+                <img src="img/isko&iska/img2.png" style="width: 100%" />
               </div>
 
               <div class="modal-slides">
                 <div class="numbertext">4 / 4</div>
-                <img src="img/isko&iska/img1.png" style="width: 100%" />
+                <img src="img/isko&iska/img3.png" style="width: 100%" />
               </div>
 
               <!-- Next/previous controls -->
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <a class="prev" onclick="plusSlides(-1, 1, 4)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 1, 4)">&#10095;</a>
 
               <!-- Thumbnail image controls -->
               <div class="thumbnail-slides">
                 <div class="column">
                   <img
                     class="demo"
-                    src="img/isko&iska/img1.png"
+                    src="img/isko&iska/i&i-thumbnail.png"
                     onclick="currentSlide(1)"
                     alt="Nature"
                   />
@@ -232,7 +237,7 @@
                 <div class="column">
                   <img
                     class="demo"
-                    src="img/isko&iska/img2.png"
+                    src="img/isko&iska/img1.png"
                     onclick="currentSlide(2)"
                     alt="Snow"
                   />
@@ -241,7 +246,7 @@
                 <div class="column">
                   <img
                     class="demo"
-                    src="img/isko&iska/img3.png"
+                    src="img/isko&iska/img2.png"
                     onclick="currentSlide(3)"
                     alt="Mountains"
                   />
@@ -250,7 +255,7 @@
                 <div class="column">
                   <img
                     class="demo"
-                    src="img/isko&iska/img1.png"
+                    src="img/isko&iska/img3.png"
                     onclick="currentSlide(4)"
                     alt="Lights"
                   />
@@ -259,8 +264,145 @@
             </div>
           </div>
 
-          <div class="projects-modal"></div>
-          <div class="projects-modal"></div>
+          <div class="projects-modal-2 modal">
+            <span class="close cursor" onclick="closeModal('.projects-modal-2')"
+              >&times;</span
+            >
+            <div class="modal-content">
+              <div class="modal-slides">
+                <div class="numbertext">1 / 4</div>
+                <img src="img/youshoes/img1.png" style="width: 100%" />
+              </div>
+
+              <div class="modal-slides">
+                <div class="numbertext">2 / 4</div>
+                <img src="img/youshoes/img2.png" style="width: 100%" />
+              </div>
+
+              <div class="modal-slides">
+                <div class="numbertext">3 / 4</div>
+                <img src="img/youshoes/img3.png" style="width: 100%" />
+              </div>
+
+              <div class="modal-slides">
+                <div class="numbertext">4 / 4</div>
+                <img src="img/youshoes/img6.png" style="width: 100%" />
+              </div>
+
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1, 5, 8)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 5, 8)">&#10095;</a>
+
+              <!-- Thumbnail image controls -->
+              <div class="thumbnail-slides">
+                <div class="column">
+                  <img
+                    class="demo"
+                    src="img/youshoes/img1.png"
+                    onclick="currentSlide(5)"
+                    alt="Nature"
+                  />
+                </div>
+
+                <div class="column">
+                  <img
+                    class="demo"
+                    src="img/youshoes/img2.png"
+                    onclick="currentSlide(6)"
+                    alt="Snow"
+                  />
+                </div>
+
+                <div class="column">
+                  <img
+                    class="demo"
+                    src="img/youshoes/img3.png"
+                    onclick="currentSlide(7)"
+                    alt="Mountains"
+                  />
+                </div>
+
+                <div class="column">
+                  <img
+                    class="demo"
+                    src="img/youshoes/img6.png"
+                    onclick="currentSlide(8)"
+                    alt="Lights"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects-modal-3 modal">
+            <span class="close cursor" onclick="closeModal('.projects-modal-3')"
+              >&times;</span
+            >
+            <div class="modal-content">
+              <div class="modal-slides">
+                <div class="numbertext">1 / 4</div>
+                <img src="img/youshoes/img1.png" style="width: 100%" />
+              </div>
+
+              <div class="modal-slides">
+                <div class="numbertext">2 / 4</div>
+                <img src="img/youshoes/img2.png" style="width: 100%" />
+              </div>
+
+              <div class="modal-slides">
+                <div class="numbertext">3 / 4</div>
+                <img src="img/youshoes/img3.png" style="width: 100%" />
+              </div>
+
+              <div class="modal-slides">
+                <div class="numbertext">4 / 4</div>
+                <img src="img/youshoes/img6.png" style="width: 100%" />
+              </div>
+
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1, 9, 12)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 9, 12)">&#10095;</a>
+
+              <!-- Thumbnail image controls -->
+              <div class="thumbnail-slides">
+                <div class="column">
+                  <img
+                    class="demo"
+                    src="img/youshoes/img1.png"
+                    onclick="currentSlide(9)"
+                    alt="Nature"
+                  />
+                </div>
+
+                <div class="column">
+                  <img
+                    class="demo"
+                    src="img/youshoes/img2.png"
+                    onclick="currentSlide(10)"
+                    alt="Snow"
+                  />
+                </div>
+
+                <div class="column">
+                  <img
+                    class="demo"
+                    src="img/youshoes/img3.png"
+                    onclick="currentSlide(11)"
+                    alt="Mountains"
+                  />
+                </div>
+
+                <div class="column">
+                  <img
+                    class="demo"
+                    src="img/youshoes/img6.png"
+                    onclick="currentSlide(12)"
+                    alt="Lights"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </section>
