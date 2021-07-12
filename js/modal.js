@@ -10,7 +10,7 @@ function closeModal(e) {
   reference.style.display = 'none';
 }
 
-var slideIndex = 1;
+let slideIndex = 1;
 
 // Next/previous controls
 function plusSlides(n, f, l) {
@@ -23,9 +23,9 @@ function currentSlide(n, f, l) {
 }
 
 function showSlides(n, firstIndex, lastIndex) {
-  var i;
-  var slides = document.getElementsByClassName('modal-slides');
-  var dots = document.getElementsByClassName('demo');
+  let i;
+  let slides = document.getElementsByClassName('modal-slides');
+  let dots = document.getElementsByClassName('demo');
 
   if (n > lastIndex) {
     slideIndex = firstIndex;
