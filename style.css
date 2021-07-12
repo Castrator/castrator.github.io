@@ -83,6 +83,7 @@ header > * {
   box-shadow: 0 0 10px #b8fff7;
   transition: all 0.3s;
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .header-name-title {
@@ -108,25 +109,6 @@ header > * {
   justify-content: space-between;
   list-style-type: none;
   color: #71e2d5;
-}
-
-.header-links {
-  display: flex;
-}
-
-.header-links a {
-  text-decoration: none;
-  color: #71e2d5;
-  transition: all 0.3s;
-}
-
-.header-links h3:last-child {
-  margin-left: 3rem;
-}
-
-.header-links a:hover {
-  color: white;
-  text-shadow: 0 0 10px #b8fff7;
 }
 
 /* IDENTITY */
@@ -180,7 +162,7 @@ header > * {
 .educ-skills {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 10px solid #0aaa98;
+  /* border-bottom: 10px solid #0aaa98; */
   padding-bottom: 2rem;
 }
 
@@ -350,6 +332,7 @@ header > * {
   /* box-shadow: 0 0 10px white; */
   transition: all 0.3s;
   transform: scale(1.02);
+  cursor: pointer;
 }
 .proj-thumbnail {
   height: 100%;
@@ -368,6 +351,7 @@ header > * {
   background-image: url('img/cover.png');
   color: white;
   padding-bottom: 1rem;
+  border-bottom: 10px solid #0aaa98;
 }
 
 .contact h1 {
@@ -402,7 +386,7 @@ header > * {
 /* FOOTER */
 footer {
   padding: 2rem;
-  background-color: #1b504b;
+  background-color: #153330;
   text-align: center;
   color: white;
 }
@@ -423,6 +407,7 @@ footer {
 
 .icon a:hover {
   color: white;
+  cursor: pointer;
 }
 
 /* LAPTOP */
