@@ -1,20 +1,3 @@
-.thumbnail-slides {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 1.5rem;
-  width: 40vw;
-  height: 20vh;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
-
-.column img {
-  width: 100%;
-}
-
 /* MODAL BACKGROUND*/
 .modal {
   display: none;
@@ -45,6 +28,24 @@
   width: auto;
 }
 
+/* THUMBNAILS */
+.thumbnail-slides {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  width: 40vw;
+  height: 20vh;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.column img {
+  width: 100%;
+}
+
 /* CLOSE BUTTON */
 .close {
   color: white;
@@ -62,7 +63,7 @@
   cursor: pointer;
 }
 
-/* HDIE SLIDES */
+/* HIDE SLIDES */
 .modal-slides {
   display: none;
 }
