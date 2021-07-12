@@ -32,7 +32,7 @@ h2 {
   }
 }
 
-.prompt-me {
+.toggle-me {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -41,7 +41,7 @@ h2 {
   transition: all 0.5s ease-in-out;
 }
 
-.prompt-me:active {
+.toggle-me:active {
   animation-name: zoom;
   animation-duration: 1s;
 }
@@ -142,15 +142,12 @@ header > * {
 }
 
 /* IDENTITY */
-.identity {
-  /* border-bottom: 10px solid #0aaa98; */
-}
 
 .identity-description {
   padding: 2rem;
   font-weight: 500;
   color: white;
-  background-color: #1b504b;
+  background-color: #246b64;
   display: flex;
   justify-content: center;
 }
@@ -179,11 +176,24 @@ header > * {
   margin-right: 0.5rem;
 }
 
+.projects-artworks {
+  padding: 0 2rem 2rem 2rem;
+  background-color: #1d504b;
+}
+
+.projects-artworks h2 {
+  margin-top: 0;
+  padding-top: 1.5rem;
+  color: #b8fff7;
+}
+
 /* EDUC + SKILLS */
 
 .educ-skills {
   display: flex;
   flex-wrap: wrap;
+  border-bottom: 10px solid #0aaa98;
+  padding-bottom: 2rem;
 }
 
 /* EDUCATION */
@@ -361,6 +371,71 @@ header > * {
   overflow: hidden;
 }
 
+/* CONTACT */
+.contact * {
+  margin: 0;
+}
+
+.contact {
+  background-image: url('img/cover.png');
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.contact h1 {
+  padding: 1.5rem 0 1rem 0;
+}
+
+.contact-tarea {
+  height: 12rem;
+  background-color: #e2fdfa;
+  border: 2px solid #099988;
+  border-radius: 15px;
+  padding: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.contact-btn {
+  border: none;
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 999px;
+  color: white;
+  background-color: #099988;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+  background-color: #0bceb7;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* FOOTER */
+footer {
+  padding: 2rem;
+  background-color: #1b504b;
+  text-align: center;
+  color: white;
+}
+
+.icons {
+  font-size: xx-large;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.icon a {
+  color: #b8fff7;
+}
+
+.icon a:hover {
+  color: white;
+}
+
 /* LAPTOP */
 @media only screen and (max-width: 1919px) {
   body {
@@ -413,6 +488,8 @@ header > * {
   .educ-skills {
     flex-direction: column;
     flex-wrap: nowrap;
+    border-bottom: none;
+    padding-bottom: 0;
   }
 
   .education {

@@ -26,7 +26,6 @@ function showSlides(n, firstIndex, lastIndex) {
   var i;
   var slides = document.getElementsByClassName('modal-slides');
   var dots = document.getElementsByClassName('demo');
-  // var captionText = document.getElementById("caption");
 
   if (n > lastIndex) {
     slideIndex = firstIndex;
@@ -44,5 +43,4 @@ function showSlides(n, firstIndex, lastIndex) {
   slides[slideIndex - 1].style.display = 'block';
   dots[slideIndex - 1].className += ' active';
   console.log(dots[slideIndex - 1]);
-  // captionText.innerHTML = dots[slideIndex-1].alt;
 }
