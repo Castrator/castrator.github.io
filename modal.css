@@ -1,12 +1,14 @@
 .thumbnail-slides {
+  display: flex;
+  margin: 0 auto;
   margin-top: 1.5rem;
-  gap: 1rem;
+  width: 40vw;
+  height: 20vh;
 }
 
 .column {
   float: left;
   width: 25%;
-  overflow: hidden;
 }
 
 .column img {
@@ -34,7 +36,14 @@
   margin: auto;
   padding: 0;
   width: 90%;
-  max-width: 600px;
+  max-height: 60vh;
+  /* max-width: 60vw; */
+  text-align: center;
+}
+
+.modal-slides img {
+  height: 60vh;
+  width: auto;
 }
 
 /* The Close Button */
@@ -82,6 +91,10 @@
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -121,4 +134,21 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 700px) {
+  .thumbnail-slides {
+    width: 100%;
+  }
+  .modal-content {
+    max-height: 40vh;
+  }
+  .modal-slides img {
+    height: auto;
+    width: 100%;
+  }
+  .prev,
+  .next {
+    display: none;
+  }
 }

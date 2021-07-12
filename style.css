@@ -31,15 +31,19 @@ h2 {
     transform: scale(0);
   }
 }
+
 .prompt-me {
   position: fixed;
   height: 100%;
   width: 100%;
   background-color: #153330;
   z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.prompt-me:active {
   animation-name: zoom;
-  animation-duration: 0.6s;
-  /* transition: all 0.5s ease-in-out; */
+  animation-duration: 1s;
 }
 
 .header-image {
@@ -359,7 +363,7 @@ header > * {
 
 /* LAPTOP */
 @media only screen and (max-width: 1919px) {
-  /* body {
+  body {
     font-size: 0.8em;
   }
   .skills {
@@ -367,7 +371,7 @@ header > * {
   }
   .skill {
     font-size: 0.1em;
-  } */
+  }
 }
 
 /* MOBILE VIEW */
