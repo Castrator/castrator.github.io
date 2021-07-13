@@ -30,7 +30,7 @@ function showSlides(n, firstIndex, lastIndex) {
   if (n > lastIndex) {
     slideIndex = firstIndex;
   }
-  if (n < 1) {
+  if (n < firstIndex) {
     slideIndex = lastIndex;
   }
   for (i = 0; i < slides.length; i++) {
